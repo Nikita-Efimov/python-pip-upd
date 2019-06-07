@@ -3,7 +3,7 @@ import subprocess
 
 pip_name = str(input('Enter your pip name: '))
 
-print(pip_name)
+# print(pip_name)
 
 stream = os.popen(' '.join([pip_name, 'list', '--format', 'freeze']))
 

@@ -13,7 +13,7 @@ os.system(' '.join([pip_name, 'install', '--upgrade', 'pip']))
 
 for line in pckg_list.split('\n'):
     pckg = line.split('==')[0]
-    if pckg is '':
+    if pckg == '':
         break
     os.system(' '.join([pip_name, 'install', '-U', pckg]))
 
